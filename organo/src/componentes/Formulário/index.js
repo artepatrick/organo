@@ -1,7 +1,6 @@
 import './Formulário.css'
 import CampoTexto from '../CampoTexto'
 import React from 'react'
-import ReactDOM from 'react-dom'
 import ListaSuspensa from '../ListaSuspensa'
 
 const Formulário = () => {
@@ -11,6 +10,7 @@ const Formulário = () => {
         'Front-ending',
         'DevOps'
     ]
+    
     return (
         <section className="formulario">
             <form>

@@ -1,4 +1,6 @@
 import './CampoTexto.css'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 const CampoTexto = (props) => {
     console.log(props.label)

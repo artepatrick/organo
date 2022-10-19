@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.boxFormulário {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.faixaBoxes {
+  background-color: #D9F7E9;
+  padding: 34px 0px;
+}
+
+.faixaBoxes h2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+}
+
+.faixaBoxes section {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 262px;
+  max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}

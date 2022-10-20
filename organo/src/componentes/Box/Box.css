@@ -22,7 +22,7 @@
 .foto-redonda {
     width: 120px;
     height: 120px;
-    border-radius: 120pc;
+    border-radius: 120px;
     border: 3px solid white;
     background-color: blueviolet;
     box-sizing: border-box;

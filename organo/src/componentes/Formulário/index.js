@@ -11,11 +11,12 @@ const Formulário = () => {
         'Produto',
         'QA'
     ]
+
     const labels = [
         'Nome',
         'Cargo',
         'email',
-        'Imagem'
+        'Imagem',
     ]
 
     return (

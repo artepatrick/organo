@@ -2,8 +2,8 @@ import './CampoTexto.css'
 import React from 'react'
 
 const CampoTexto = (props) => {
-    console.log(props.label)
-    console.log(props.placeholder)
+    // console.log(props.label)
+    // console.log(props.placeholder)
     const placeholdermodificada = `${props.placeholder}...`
     return (
         <div className="campo-texto">

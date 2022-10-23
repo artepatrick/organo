@@ -19,9 +19,7 @@ const FaixaBox = () => {
                 <div>
                     {
                         dadosPessoaDb.map((dadosPessoa) => {
-                            return (
-                                <Box key={dadosPessoa.nome} nomePessoa={dadosPessoa.nome} profissao={dadosPessoa.profissao} imagemPerfil={dadosPessoa.imagem} />
-                            )
+                            return (<Box key={dadosPessoa.nome} nomePessoa={dadosPessoa.nome} profissao={dadosPessoa.profissao} imagemPerfil={dadosPessoa.imagem} />)
                         })
                     }
                 </div>

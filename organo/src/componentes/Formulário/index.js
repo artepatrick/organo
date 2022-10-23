@@ -1,39 +1,37 @@
-import './Formulário.css'
+import './Formulario.css'
 import CampoTexto from '../CampoTexto'
 import React from 'react'
 import ListaSuspensa from '../ListaSuspensa'
 import Botao from '../Botao'
 
+const times = [
+    'Desenvolvimento',
+    'UX',
+    'Produto',
+    'QA'
+]
+
+const labels = [
+    'Nome',
+    'Cargo',
+    'email',
+    'Imagem',
+]
+
+const aoSalvar = (evento) => {
+    evento.preventDefault()
+    console.log('form foi submetido')
+}
+
 const Formulário = () => {
-
-    const times = [
-        'Desenvolvimento',
-        'UX',
-        'Produto',
-        'QA'
-    ]
-
-    const labels = [
-        'Nome',
-        'Cargo',
-        'email',
-        'Imagem',
-    ]
 
     return (
         <section className="formulario">
-            <form>
+            <form onSubmit={aoSalvar}>
                 <h2>Preencha os dados para criar o card do colaborador</h2>
                 {labels.map((label) => {
                     return <CampoTexto key={label} label={label} placeholder={`digite seu ${label}`} />
                 })}
-                {
-                    /* 
-                    <CampoTexto label="Nome" placeholder="digite seu nome" />
-                    <CampoTexto label="Cargo" placeholder="digite seu cargo" />
-                    <CampoTexto label="email" placeholder="digite seu email" />
-                    <CampoTexto label="Imagem" placeholder="digite o endereço da sua imagem" /> */
-                }
                 <ListaSuspensa label="Selecione seu time" itens={times} />
                 <Botao>
                     Criar Card

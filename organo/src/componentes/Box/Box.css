@@ -1,14 +1,11 @@
 .bigBox {
-    margin: 50px auto;
+    margin: 5px 5px;
     width: 262px;
     /* height: 272px; */
     background-color: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .faixaBox {

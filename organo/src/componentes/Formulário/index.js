@@ -2,6 +2,7 @@ import './Formulário.css'
 import CampoTexto from '../CampoTexto'
 import React from 'react'
 import ListaSuspensa from '../ListaSuspensa'
+import Botao from '../Botao'
 
 const Formulário = () => {
 
@@ -34,6 +35,9 @@ const Formulário = () => {
                     <CampoTexto label="Imagem" placeholder="digite o endereço da sua imagem" /> */
                 }
                 <ListaSuspensa label="Selecione seu time" itens={times} />
+                <Botao>
+                    Criar Card
+                </Botao>
             </form>
         </section>
     )

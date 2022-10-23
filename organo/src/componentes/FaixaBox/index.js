@@ -1,8 +1,8 @@
 import './FaixaBox.css'
 import React from 'react'
 import Box from '../Box'
-import nomePessoaDb from '../Db'
-// import nomePessoaDb from '../Db/db.js'
+import dadosPessoaDb from '../Db'
+// import dadosPessoaDb from '../Db/db.js'
 
 // const dadosPessoasNaFaixa = [
 //     { 'nome': 'Ana', 'profissao': 'Deenvolvedor', 'imagem': 'https://img.elo7.com.br/product/original/3EECB71/desenho-personalizado-para-usar-de-foto-de-perfil-e-etc-personalizado.jpg' },
@@ -11,25 +11,27 @@ import nomePessoaDb from '../Db'
 // ]
 
 const FaixaBox = () => {
-    console.log(JSON.stringify(nomePessoaDb))
+    // console.log(JSON.stringify(dadosPessoaDb))
     return (
         <div>
             <h2>Desenvolvimento</h2>
-            {/* <div>
-                {
-                    nomePessoaDb.map((nomePessoa) => {
-                        return (
-                            <Box key={nomePessoa} nomePessoa={nomePessoa} profissao='Quality Assurance' imagemPerfil='https://img.elo7.com.br/product/original/3EECB71/desenho-personalizado-para-usar-de-foto-de-perfil-e-etc-personalizado.jpg' />
-                        )
-                    })
-                }
-            </div> */}
-            <section>
+            <div className='faixaBoxDiv'>
+                <div>
+                    {
+                        dadosPessoaDb.map((dadosPessoa) => {
+                            return (
+                                <Box key={dadosPessoa.nome} nomePessoa={dadosPessoa.nome} profissao={dadosPessoa.profissao} imagemPerfil={dadosPessoa.imagem} />
+                            )
+                        })
+                    }
+                </div>
+                {/* <section>
                 <Box nomePessoa="Laura" profissao='Quality Assurance' imagemPerfil='https://img.elo7.com.br/product/original/3EECB71/desenho-personalizado-para-usar-de-foto-de-perfil-e-etc-personalizado.jpg' />
                 <Box nomePessoa="Denise" profissao='Product Owner' imagemPerfil='https://img.elo7.com.br/product/main/3E26D20/desenho-personalizado-para-perfil-desenho-personalizado.jpg' />
                 <Box nomePessoa="Patrick" profissao='Product Manager' imagemPerfil='https://img.freepik.com/vetores-premium/imagem-de-perfil-de-personagem-de-desenho-animado-avatar-jovem_18591-55058.jpg?w=2000' />
                 <Box nomePessoa="Alexandre" profissao='Desenvolvedor' imagemPerfil='https://img.freepik.com/vetores-premium/imagem-de-perfil-de-personagem-de-desenho-animado-avatar-jovem_18591-55054.jpg?w=2000' />
-            </section>
+            </section> */}
+            </div>
         </div>
     )
 }

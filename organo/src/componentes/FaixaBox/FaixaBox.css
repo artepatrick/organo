@@ -1,0 +1,13 @@
+.faixaBoxDiv {
+    min-width: 262px;
+    max-width: 1100px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.faixaBoxDiv div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,17 +1,21 @@
 import './ListaSuspensa.css'
 import React from 'react'
 
+
 const ListaSuspensa = (props) => {
+
     return (
-        <div>
+        <div className='lista-Suspensa'>
             <label>{props.label}</label>
-            <select className='DropDown'>
-                {props.itens.map(item => {
-                    return <option key={item}>{item}</option>
+            <select>
+                {props.itens.map((item, index) => {
+                    return <option key={`${index}-${item}`}>{item}</option>
                 }
                 )}
             </select>
         </div>
+
     )
+
 }
 export default ListaSuspensa

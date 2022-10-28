@@ -1,5 +1,5 @@
 .botao {
-    padding: 32px;
+    padding: 10px;
     background: #6278F7;
     border-radius: 10px;
     border: none;
@@ -9,6 +9,7 @@
     line-height: 43px;
     cursor: pointer;
     margin: 32px 0;
+    vertical-align: middle;
 }
 
 .botao:hover {

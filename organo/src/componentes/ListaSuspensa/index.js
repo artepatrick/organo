@@ -7,7 +7,7 @@ const ListaSuspensa = (props) => {
     return (
         <div className='lista-Suspensa'>
             <label>{props.label}</label>
-            <select>
+            <select required={props.obrigatorio}>
                 {props.itens.map((item, index) => {
                     return <option key={`${index}-${item}`}>{item}</option>
                 }

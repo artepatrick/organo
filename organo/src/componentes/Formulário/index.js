@@ -32,9 +32,12 @@ const Formulário = () => {
                 {labels.map((label) => {
                     return <CampoTexto key={label} label={label} placeholder={`digite seu ${label}`} />
                 })}
-                <ListaSuspensa label="Selecione seu time" itens={times} />
+                <ListaSuspensa obrigatorio={true} label="Selecione seu time" itens={times} />
                 <Botao>
-                    Criar Card
+                    <div>
+                        <img className='imagem-botao' src="https://thispersondoesnotexist.com/image" />
+                        Criar Card
+                    </div>
                 </Botao>
             </form>
         </section>

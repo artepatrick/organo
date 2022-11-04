@@ -10,11 +10,11 @@ const FaixaBox = (props) => {
         <div>
             <h2>{props.time}</h2>
             <div className='faixaBoxDiv'>
-                    {
-                        dadosPessoaDb.map((dadosPessoa) => {
-                            return (<Box key={dadosPessoa.nome} nomePessoa={dadosPessoa.nome} profissao={dadosPessoa.profissao} imagemPerfil={dadosPessoa.imagem} />)
-                        })
-                    }
+                {
+                    dadosPessoaDb.map((dadosPessoa) => {
+                        return (<Box key={dadosPessoa.nome} nomePessoa={dadosPessoa.nome} profissao={dadosPessoa.profissao} imagemPerfil={dadosPessoa.imagem} />)
+                    })
+                }
             </div>
         </div>
     )

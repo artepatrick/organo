@@ -4,11 +4,11 @@ import Box from '../Box'
 import dadosPessoaDb from '../Db'
 
 
-const FaixaBox = () => {
-    // console.log(JSON.stringify(dadosPessoaDb))
+const FaixaBox = (props) => {
+    /* console.log(`background-color: ${props.times.cor}`) */
     return (
         <div>
-            <h2>Desenvolvimento</h2>
+            <h2>{props.time}</h2>
             <div className='faixaBoxDiv'>
                     {
                         dadosPessoaDb.map((dadosPessoa) => {

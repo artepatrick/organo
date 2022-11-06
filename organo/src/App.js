@@ -15,10 +15,11 @@ function App(props) {
   }
 
   const times = [
-    { 'time': 'Programação', 'cor': '#57C278' },
-    { 'time': 'Front End', 'cor': '#82CFFA' },
+    { 'nome': 'Desenvolvedores', 'time': 'Programação', 'cor': '#57C278' },
+    { 'nome': 'UX', 'time': 'Front End', 'cor': '#82CFFA' },
   ]
 
+  console.log('teste 2', times.map(() => { return times }))
   return (
     <div>
       <Banner />
@@ -32,7 +33,7 @@ function App(props) {
       </div>
       <div className='faixaBoxes'>
         {
-          times.map((time) => {
+          times.map((i) => {
             return (<FaixaBox time={times.nome} cor={times.cor} />)
           })
         }

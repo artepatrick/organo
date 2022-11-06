@@ -6,6 +6,7 @@ import dadosPessoaDb from '../Db'
 
 const FaixaBox = (props) => {
     /* console.log(`background-color: ${props.times.cor}`) */
+    console.log('time ', props.time, ' e cor ', props.cor)
     return (
         <div>
             <h2>{props.time}</h2>
